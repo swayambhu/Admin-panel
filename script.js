@@ -1,7 +1,7 @@
 $(document).ready(function() {
   //NOTE => Prepending "https://cors-anywhere.herokuapp.com/" to the given API data for github security allowance for http requests.
   $.get(
-    "http://www.filltext.com/?rows=32&id=%7Bnumber%7C1000%7D&firstName=%7BfirstName%7D&lastName=%7BlastName%7D&email=%7Bemail%7D&phone=%7Bphone%7C(xxx)xxx-xx-xx%7D&address=%7BaddressObject%7D&description=%7Blorem%7C32%7D",
+    "https://www.filltext.com/?rows=32&id=%7Bnumber%7C1000%7D&firstName=%7BfirstName%7D&lastName=%7BlastName%7D&email=%7Bemail%7D&phone=%7Bphone%7C(xxx)xxx-xx-xx%7D&address=%7BaddressObject%7D&description=%7Blorem%7C32%7D",
     function (data, status) {
       for (let i = 0; i < data.length; i++) {
         createDataTable(data[i]);
